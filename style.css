@@ -107,7 +107,7 @@ nav {
     height: 450px;
     width: 450px;
     border-radius: 50%;
-    left: -12%;
+    left: -15%;
     top: 35%;
     background: linear-gradient(45deg, #F99417, #ffb800);
     animation: object1 6s linear infinite;
@@ -127,7 +127,7 @@ nav {
 
 @keyframes object1 {
     50%{
-        left: -13%;
+        left: -17%;
         top: 41%;
     }
 }
@@ -514,7 +514,7 @@ animation: animate 4s linear infinite;
 
 .hoverr {
     top: 309%;
-    left: 33%;
+    left: 26.8%;
     position: absolute;
     padding: 5px;
     border: none;
@@ -527,7 +527,7 @@ animation: animate 4s linear infinite;
 
 @keyframes objecth {
     50%{
-        left: 33.5%;
+        left: 27.3%;
         top: 309%;
     }
 }
@@ -580,7 +580,7 @@ animation: animate 4s linear infinite;
     border-radius: 10px;
     overflow: hidden;
     margin-top:250px;
-    margin-left: 300px;
+    margin-left: 200px;
     align-content: center;
     position: absolute;
 }
@@ -653,10 +653,71 @@ animation: animate 4s linear infinite;
     margin-left: 20px;
     font-size: 17px;
 }
+
+.skillcard2 {
+    width: 500px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px #36454F;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top:250px;
+    margin-left: 800px;
+    align-content: center;
+    position: absolute;
+}
+
+.skillhead2 {
+    background-color: #579BB1;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 27px;
+}
+
+.skillbody2 {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.skillinfo2 {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.skillname2 {
+    width: 200px;
+    font-size: 17px;
+    position: relative;
+}
+
+.skilllevel2 {
+    width: 180px;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+.skillpercent2 {
+    background-color: #579BB1;
+    height: 100%;
+}
+
+.skillpercentnumber2 {
+    margin-left: 20px;
+    font-size: 17px;
+}
   
 .works {
     background-color: #f2f2f2;
     height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
 }
 
 .ww {
@@ -687,6 +748,24 @@ animation: animate 4s linear infinite;
     top: 330%;
     left: 53.7%;
     position: absolute;
+}
+
+.slider {
+    /* background-color: #000; */
+    width: 90%;
+    height: 60%;
+    margin-top: 200px;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.slidercard {
+    background-color: #fff;
+    width: 300px;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px solid #579BB1;
 }
 
 .contact {
@@ -882,3 +961,17 @@ animation: animate 4s linear infinite;
     }
 }
   
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 100px;
+    font-size: 40px;
+    z-index: 99999;
+}

@@ -39,3 +39,36 @@ function animateCircles() {
         y += (nextCircle.y - y) * 0.2;
     });
 }
+
+const button = document.getElementById('totop');
+
+function handleScroll() {
+  const scrollThreshold = 767.2000122070312;
+  if (window.scrollY >= scrollThreshold) {
+    button.style.display = 'block';
+  } else {
+    button.style.display = 'none';
+  }
+}
+
+window.addEventListener('scroll', handleScroll);
+handleScroll();
+
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function() {
+  form.reset();
+});
+
+const mobileOverlay = document.getElementById('overlay');
+
+function checkScreenSize() {
+  if (window.innerWidth <= 1080) {
+    mobileOverlay.style.display = 'block';
+  } else {
+    mobileOverlay.style.display = 'none';
+  }
+}
+
+window.addEventListener('load', checkScreenSize);
+window.addEventListener('resize', checkScreenSize);
